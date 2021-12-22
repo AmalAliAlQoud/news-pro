@@ -57,38 +57,74 @@
 
   <section class="d-flex row-container bg-success">
     <nav class="side col-lg-2">
-      <div>
-        <p class="fs-4 text-decoration-underline">filter by:</p>
-        <ul>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="check1">
-            <label class="form-check-label fs-10" for="flexCheckDefault">
-              newest articles
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="check2">
-            <label class="form-check-label" for="flexCheckDefault">
-              US News 
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="check3">
-            <label class="form-check-label" for="flexCheckDefault">
-              Default checkbox
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="check4">
-            <label class="form-check-label" for="flexCheckDefault">
-              Default checkbox
-            </label>
-          </div>
-        </ul>
-      </div>
-      <div>
 
+      <!---weather--------->
+      <div class="container">
+        <div id="demo"></div>
+        <div id="weatherId">
+          
+
+        </div>
       </div>
+
+
+      <script>
+        var x = document.getElementById("demo");
+       // function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+       // }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude +
+          "<br>Longitude: " + position.coords.longitude;
+          let lat=position.coords.latitude;
+          let lon=position.coords.longitude;
+          //console.log(lon);
+
+          //displayLocation(lat,lon);
+
+        }
+        /*----
+
+        function displayLocation(latitude,longitude){
+
+    var geocoder;
+    geocoder = new google.maps.Geocoder();
+    var latlng = new google.maps.LatLng(latitude, longitude);
+    geocoder.geocode(
+        {'latLng': latlng}, 
+        function(results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                if (results[0]) {
+                    var add= results[0].formatted_address ;
+                    var  value=add.split(",");
+
+                    count=value.length;
+                    country=value[count-1];
+                    state=value[count-2];
+                    city=value[count-3];
+                    x.innerHTML = "city name is: " + city;
+                }
+                else  {
+                    x.innerHTML = "address not found";
+                }
+            }
+            else {
+                x.innerHTML = "Geocoder failed due to: " + status;
+            }
+        }
+    );
+}*/
+        </script>
+      <!-------end weather-->
+
+
+
+
     </nav>
 
 
@@ -137,7 +173,7 @@
 
 
 
-
+<script src="http://maps.google.com/maps/api/js?key=YOUR_API_KEY"></script>
   <script src="/js/news.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

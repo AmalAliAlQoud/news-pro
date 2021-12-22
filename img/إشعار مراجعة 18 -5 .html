@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://digitalhealth.sfh.med.sa/PO/pages/VstRptPrint.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	إشعار مراجعة
+</title>
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="./إشعار مراجعة 18 -5 _files/analytics.js"></script><script async="" src="./إشعار مراجعة 18 -5 _files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132351357-1');
+    </script>
+    <!-- END Global site tag (gtag.js) - Google Analytics -->
+    
+
+    <link href="./إشعار مراجعة 18 -5 _files/css" rel="stylesheet" type="text/css"><link href="./إشعار مراجعة 18 -5 _files/font-awesome.min.css" rel="stylesheet" type="text/css"><link href="./إشعار مراجعة 18 -5 _files/simple-line-icons.min.css" rel="stylesheet" type="text/css"><link id="cssFile1" rel="stylesheet" type="text/css" href="./إشعار مراجعة 18 -5 _files/bootstrap-rtl.min.css"><link id="cssFile2" rel="stylesheet" type="text/css" href="./إشعار مراجعة 18 -5 _files/bootstrap-switch-rtl.min.css"><link id="cssFile3" rel="stylesheet" type="text/css" href="./إشعار مراجعة 18 -5 _files/components-rounded-rtl.min.css"><link id="cssFile4" rel="stylesheet" type="text/css" href="./إشعار مراجعة 18 -5 _files/plugins-rtl.min.css"><link id="cssFile5" rel="stylesheet" type="text/css" href="./إشعار مراجعة 18 -5 _files/layout-rtl.min.css"><link id="cssFile6" rel="stylesheet" type="text/css" href="./إشعار مراجعة 18 -5 _files/default-rtl.min.css"><link id="cssFile7" rel="stylesheet" type="text/css" href="./إشعار مراجعة 18 -5 _files/custom-rtl.min.css">
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+        .auto-style2 {
+            text-align: left;
+        }
+
+        .auto-style3 {
+            text-align: left;
+            font-weight: bold;
+            padding-left: 7px;
+            width: 138px;
+        }
+
+        .auto-style4 {
+            width: 138px;
+            padding-right: 7px;
+        }
+
+        .auto-style5 {
+            width: 204px;
+        }
+    </style>
+
+    
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+            font: 12pt;
+            font-family: "myFirstFont";
+        }
+
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 10mm;
+            margin: 5mm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .subpage {
+            padding: 5cm;
+            border: 0px black solid;
+            height: 257mm;
+            outline: 1cm #FFFFFF solid;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            html, body {
+                width: 210mm;
+                height: 297mm;
+            }
+
+            .no-print, .no-print * {
+                display: none !important;
+            }
+
+            .page {
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+                padding-top: 10px;
+            }
+        }
+
+        .auto-style6 {
+            width: 275px;
+        }
+
+        .auto-style7 {
+            text-align: center;
+        }
+    </style>
+    
+
+    <script src="./إشعار مراجعة 18 -5 _files/html2pdf.bundle.min.js"></script>
+    <script>
+        function generatePDF() {
+            // Choose the element that our invoice is rendered in.
+            const element = document.getElementById("invoice2"); //mainPrint
+            // Choose the element and save the PDF for our user.
+            html2pdf()
+                .from(element)
+                .save("VisitReport");
+        }
+        ///*https://www.npmjs.com/package/html2pdf.js/v/0.9.0*/
+
+        //function generatePDF_Main() {
+        //    // Choose the element that our invoice is rendered in.
+        //    var element = document.getElementById("invoice2"); //mainPrint
+        //    var opt = {
+        //        filename: 'COVID19SICKLEAVE.pdf',
+        //        image: { type: 'jpeg', quality: 0.98 },
+        //        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        //    };
+
+        //    // New Promise-based usage:
+        //    html2pdf().from(element).set(opt).save();
+        //}
+
+        //function generatePDF_Print() {
+        //    // Choose the element that our invoice is rendered in.
+        //    var element = document.getElementById("invoice2"); //mainPrint
+        //    var opt = {
+        //        margin: 0,
+        //        filename: 'COVID19SickLeave.pdf',
+        //        image: { type: 'jpeg', quality: 1 },
+        //        html2canvas: { scale: 1 },
+        //        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        //    };
+
+        //    // New Promise-based usage:
+        //    html2pdf().from(element).set(opt).save();
+        //}
+
+        function printPDF(divName) {
+            var printContents = document.getElementById(divName).innerHTML;
+
+            // var originalContents = document.body.innerHTML;
+
+            document.body.innerHTML = printContents;
+
+            window.print();
+
+            //document.body.innerHTML = originalContents;
+        }
+
+        function pr() {
+            if (window.print) { window.print(); }
+        }
+    </script>
+
+
+</head>
+<body style="font-size: 16pt;">
+    
+
+    <div id="invoice" style="text-align: center;">
+        <br>
+        <h1>إشعار مراجعة</h1>
+        <br>
+        
+
+
+        <form method="post" action="https://digitalhealth.sfh.med.sa/PO/pages/VstRptPrint.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GHw9p8CglfgKpGo4YxMtDPmYSnUCisFZREh1+cbf82mcIC+MUI5otlbCg+SRw5FkYGarGrB+z2vyvjwyL2GUqk1b7EkesGN4ymxug/UJxxBXGu8f4v7sxyTtXgy1zioF09rrxZ6SSqUkSsrxRJQk3H7tL8Kfh7jDTJjaBdjQlxGjrstg55DKQakYFo2WIS/N91xN6zcttUCiQ1qUli+svvKJl2YcfRuusyqDZB791NriNzQRz+A7fvG6MErgNJCvFL1JIKgAscHELhJYOnTFbgfn1l+Jr+HO/Mh+CFyB8yPvxKNBUqJz7j8fUCcW5oS2Zh6idTrsfY5uXaWqJSYAYxNmgffxofpvEg8+He0kuWuT9uc2cWE5UeqvcZaN/9G1QSxcMVi8nDeuU5ylCPK3wht/NJCOp+yJRpX6K1P3nHMlOvv2ja7N3uCrpYaJfVRahztYDcUx4XEfB4FLNabzahH+eagReCo6DokAKxyWmhvYR8hOextRg1qwzTW2Tk2A+pNRuTGRr8zaDxvnAxHaTKrOj7lAH9L35i+7MGhlKCW9kEalk3OBp1inLuWmuUkEqAo/2shID3AB/DaT0bMziPeGdvZoVdgot8eblxNAO+QRzw54zYWDy0z+azofEnTOwKbKE3+GMoEeoXMAqC7GtnO4KFFCYKR3jOE8o6Fv6OUym4kXbZhUk9JFA72DQBT7jLPwdC6NZRUJkqYcvP2JdcODMSqedmjwbNvB7m7uOh6EGgIbaJ6wU5ALl9eDqHBTUZvmVQgdBPnANxHcvzSezVr84aoui9FPoTGwahtEDEABmV2EGjaceYoH8ZfRtLgYv6TlrRfBk9AnOGyDYQfN80UZ54lTifzxuRGnznnaI3M5fUcAx4okR78xYx3Tc59xEgKwmWDg0/JIE5fLJju/whDyyj8sTiTJw/2oyeWIwQ1pOMYKe2aiUL07qYlaw3EyEnErmcoGYwAhBnSChns53FwfnDVIZcoLrdefr2dzgLH0zjWwEG/rd9RqL9APY88mTwfVicdW0maPRQEE9+adyKhBP7oHjY/XMGc5IsCx8kz5cV35HPoXGzsJViWpo0t5q+QM6mGTpdh0u927BbyWZEsEHuInnw3ORZipZS14vdXutMXmD+7h2McIoD9Ku/0nrCDkH3tvYewgJbiFOX8gRVKQ5GwyVAvEmF61Y10q3hxGks71gsciSuKvqRG23e7Q">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5A03E941">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="KFk4/owfD646t5KZCDHvEik0yraSf+kjWPCbAVfZz0Onl020P723x4rlwc6X1K+qWgIoNGXGY+XX0Y+wuv624ZckfLva/NHg1WnlL+7eSMBOIlCIHP6DT2/sgosGLtNu">
+</div>
+            <input type="submit" name="Button1" value="Download as PDF حفظ" onclick="generatePDF();" id="Button1">
+            &nbsp; &nbsp;
+        <button onclick="printPDF(&#39;mainPrint&#39;)">Print طباعة</button>
+
+            
+
+            
+        <input type="hidden" name="__ncforminfo" value="TG_kvEAvX9zsBrv8lszD8Q_AZjst_1Hxht0fj4yUeKXMDQJ7UP-zD-N4m7co5qkFhVtPCGJ65EzM4h-fIXwIfwl_y_jTIBLa3eonv9aO9T_UxjsLbH46KreLFeKHUn_jC6li9bOnoUg="></form>
+
+
+    </div>
+    <br>
+    <div id="mainPrint" class="page">
+        <div id="invoice2" class="subpage">
+
+            <div>
+                <table style="width: 100%; font-size: 12pt;">
+                    <tbody><tr>
+                        <td class="auto-style6"><strong>KINGDOM OF SAUDI ARABIA<br>
+                            MINISTRY OF INTERIOR<br>
+                            General Administration For Medical Services<br>
+                            Security Forces Hospital Program<br>
+                            Patient Online</strong></td>
+                        <td class="auto-style7">
+                            <img alt="" width="122" height="100" src="./إشعار مراجعة 18 -5 _files/SFH-Logo-Normal.png"></td>
+                        <td style="text-align: right;"><strong>المملكة العربية السعودية<br>
+                            وزارة الداخلية<br>
+                            الإدارة العامة للخدمات الطبية<br>
+                            برنامج مستشفى قوى الأمن<br>
+                            بوابة خدمات المرضى الإلكترونية</strong></td>
+                    </tr>
+                </tbody></table>
+                <br>
+
+                <div style="text-align: center;">
+                    <span id="Label1" style="font-size:20pt;font-weight:bold;">إشـــــــعـــــــار مــــــــراجـــــعـــــة</span>
+                    <br>
+                    <span id="Label2" style="font-size:20pt;">Visit Report</span>
+                </div>
+
+
+            </div>
+            <table class="auto-style1" dir="rtl" style="border-style: solid; border-width: 1px; border-color: black; width: 100%; padding: 7px 7px 7px 7px;" border="0">
+                <tbody><tr>
+                    <td class="auto-style4">
+                        <span id="Label3" style="font-weight:bold;">رمز الوثيقة</span></td>
+                    <td class="auto-style5">
+                        <span id="lbl_ver_ar">7F4AB4AE</span></td>
+                    <td class="auto-style2">
+                        <span id="lbl_ver_EN">7F4AB4AE</span></td>
+                    <td class="auto-style3">Verification Code</td>
+                </tr>
+                <tr style="border-bottom-style: solid; border-bottom-color: black; border-bottom-width: 1px;">
+                    <td class="auto-style4"><b>تاريخ الطباعة</b></td>
+                    <td class="auto-style5">
+                        <span id="lbl_prtint_DT_AR">1443-05-18</span></td>
+                    <td class="auto-style2">
+                        <span id="lbl_prtint_DT_EN">2021-12-22</span></td>
+                    <td class="auto-style3">Print Date</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4"><strong>اسم المريض</strong></td>
+                    <td class="auto-style5">
+                        <span id="lbl_PatName_AR">أمل علي محمد القعود</span></td>
+                    <td class="auto-style2">
+                        <span id="lbl_PatName_EN">AMAL ALI MOHAMMED QOUD</span></td>
+                    <td class="auto-style3">Patient Name</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4"><strong>رقم الملف الطبي</strong></td>
+                    <td class="auto-style5">
+                        <span id="lbl_MR_AR">176575</span></td>
+                    <td class="auto-style2">
+                        <span id="lbl_MR_EN">176575</span></td>
+                    <td class="auto-style3">Medical Record No</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4"><strong>الجنس</strong></td>
+                    <td class="auto-style5">
+                        <span id="lbl_Gener_AR">أنثى</span></td>
+                    <td class="auto-style2">
+                        <span id="lbl_Gener_EN">FEMALE</span></td>
+                    <td class="auto-style3">Gender</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4"><strong>الجنسية</strong></td>
+                    <td class="auto-style5">
+                        <span id="lbl_nat_ar">سعودية</span></td>
+                    <td class="auto-style2">
+                        <span id="lbl_nat_EN">SAUDI</span></td>
+                    <td class="auto-style3">Nationality</td>
+                </tr>
+                
+                <tr>
+                    <td class="auto-style4"><strong>جهة العمل</strong></td>
+                    <td class="auto-style5">إلى من يهمه الأمر</td>
+                    <td class="auto-style2">To whom it may concern</td>
+                    <td class="auto-style3">Work</td>
+                </tr>
+                
+                <tr>
+                    <td class="auto-style4"><strong>تاريخ المراجعة - هـ</strong></td>
+                    <td class="auto-style5">
+                        <span id="lbl_vstDt_H_AR">الأربعاء 18 جمادى الأول 1443</span></td>
+                    <td class="auto-style2">
+                        <span id="lbl_vstDt_H_EN">Wednesday, 18 Jumad 1 1443</span></td>
+                    <td class="auto-style3">Visit Date - H</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4"><strong>تاريخ المراجعة - م</strong></td>
+                    <td class="auto-style5">
+                        <span id="lbl_VstDt_G_AR">2021-12-22</span></td>
+                    <td class="auto-style2" style="direction: ltr;">
+                        <span id="lbl_VstDt_G_EN">2021-12-22</span></td>
+                    <td class="auto-style3">Visit Date - G</td>
+                </tr>
+                  <tr>
+                    <td class="auto-style4"><strong>وقت المراجعة</strong></td>
+                    <td class="auto-style5">
+                        <span id="lbl_vst_TM_AR">10:49 ص</span></td>
+                    <td class="auto-style2" style="direction: ltr;">
+                        <span id="lbl_vst_TM_EN">10:49 AM</span></td>
+                    <td class="auto-style3">Visit Time</td>
+                </tr>
+                  
+                 
+                <tr>
+                    <td class="auto-style4"><strong>التوصيات</strong></td>
+                    <td class="auto-style5">
+                        <span id="lbl_remark_AR">راجع المذكور أعلاه و لم يمنح إجازة مرضية</span></td>
+                    <td class="auto-style2"><span id="lbl_remark_EN">The above mentioned patient has visited the hospital, and he was not granted a sick leave</span></td>
+                    <td class="auto-style3">Remarks</td>
+                </tr>
+            </tbody></table>
+
+            &nbsp;<div style="direction: rtl; width: 100%; border-style: none; text-align: center; border-width: 0px; font-size: 12pt; border: 0px solid black; font-weight: bold;">
+                للتأكد من صحة الوثيقة، يرجى المسح على قارئ الرمز أدناه<i class="no-print">، أو الضغط على "رابط التحقق "</i>
+            </div>
+            <div style="direction: ltr; width: 100%; border-style: none; text-align: center; border-width: 0px; font-size: 12pt; border: 0px solid black; font-weight: bold;">
+                To verify the validity of the document, please scan the below QR code<i class="no-print">, or click on 'verification link'</i>
+            </div>
+            <div style="text-align: center;">
+                <img src="./إشعار مراجعة 18 -5 _files/VstRpt.png">
+                <br>
+                <a href="https://digitalhealth.sfh.med.sa/eDocVerfication/VisitRpt.aspx" target="_blank" class="no-print">verification link - رابط التحقق</a>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+
+</body></html>
