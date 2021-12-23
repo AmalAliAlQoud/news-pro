@@ -28,7 +28,7 @@ function showPosition(position) {
            <span></span>
            <h2>${element.temp}°</h2>
          </div>
-         <div class="card-footer"><small>${element.datetime}</small></div>
+         <div class="card-footer"><h6 style="font-size:10px">${element.datetime}</h6></div>
        </div>`).join('');
     });
 }
