@@ -37,8 +37,9 @@ fetchPromise.then(response => {
 
 
 //-------side ----weather-------
+const fetchPromiseWeather = fetch(`https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lon}&key=da7e2148cfed42bbaf76dd2251b17c8c&include=minutely`);
 
-    const fetchPromiseWeather = fetch(`https://api.weatherbit.io/v2.0/current?lat=35.7796&lon=-78.6382&key=da7e2148cfed42bbaf76dd2251b17c8c&include=minutely`);
+   // const fetchPromiseWeather = fetch(`https://api.weatherbit.io/v2.0/current?lat=35.7796&lon=-78.6382&key=da7e2148cfed42bbaf76dd2251b17c8c&include=minutely`);
     fetchPromiseWeather.then(response => {
         return response.json();
     }).then(response => {
